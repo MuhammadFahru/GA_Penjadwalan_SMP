@@ -11,7 +11,6 @@ blinker==1.4
 Brotli==1.0.9
 certifi==2022.6.15
 chardet==4.0.0
-chrome-gnome-shell==0.0.0
 click==8.0.3
 colorama==0.4.5
 command-not-found==0.3
