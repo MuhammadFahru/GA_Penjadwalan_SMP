@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UTS AI - Genetic Algorithm</title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="https://i.ibb.co/f49tsXT/logo.png" type="image/x-icon">
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+
+    <!-- CDN Fontawesome -->
+    <script src="https://kit.fontawesome.com/97352e191c.js" crossorigin="anonymous"></script>
+
+    <!-- CDN Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
+
+    <!-- CDN AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Styling -->
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .c-pointer {
+            cursor: pointer;
+        }
+
+        .logo {
+            width: 15%;
+        }
+
+        .generate {
+          margin-top: 60px;
+          margin-bottom: 80px;
+        }
+
+        @media (max-width: 576px) {
+            .logo {
+                width: 200px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark p-3 sticky-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="https://i.ibb.co/BNbBNGW/logo.png" alt="Logo UPI" class="logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav ms-auto">
+            <a class="nav-link mx-2" href="/">Beranda</a>
+            <a class="nav-link mx-2 active" href="/generate">Generate</a>
+            <a class="nav-link mx-2" href="/team">Team</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- GENERATE SECTION -->
+    <section class="generate">
+      <div class="container">
+        <div class="card shadow">
+          <div class="card-header p-4">
+            <h4 class="mb-0">Generate Jadwal Pelajaran</h4>
+          </div>
+          <div class="card-body p-4">
+            <form action="/process" method="POST">
+              {% for i in range(0, mapel) %}
+                <h5>Mata Pelajaran {{i + 1}}</h5>
+                <div class="row mb-3">
+                  <div class="col-lg-6 mb-3">
+                    <label for="mapel{{i}}" class="form-label">Nama</label>
+                    <input type="text" class="form-control" id="mapel{{i}}" name="Mapel">
+                  </div>
+                  <div class="col-lg-6 mb-3">
+                    <label for="alokasi_jam{{i}}" class="form-label">Alokasi Jam</label>
+                    <input type="number" min="1" class="form-control" id="alokasi_jam{{i}}" name="Alokasi_Jam">
+                  </div>
+                  <div class="col-lg-6 mb-3">
+                    <label for="guru1kelasvii{{i}}" class="form-label">Guru 1 Kelas VII</label>
+                    <input type="text" class="form-control" id="guru1kelasvii{{i}}" name="GuruTujuh1">
+                  </div>
+                  <div class="col-lg-6 mb-3">
+                    <label for="guru2kelasvii{{i}}" class="form-label">Guru 2 Kelas VII</label>
+                    <input type="text" class="form-control" id="guru2kelasvii{{i}}" name="GuruTujuh2">
+                  </div>
+                  <div class="col-lg-6 mb-3">
+                    <label for="guru1kelasviii{{i}}" class="form-label">Guru 1 Kelas VIII</label>
+                    <input type="text" class="form-control" id="guru1kelasviii{{i}}" name="GuruDelapan1">
+                  </div>
+                  <div class="col-lg-6 mb-3">
+                    <label for="guru2kelasviii{{i}}" class="form-label">Guru 2 Kelas VIII</label>
+                    <input type="text" class="form-control" id="guru2kelasviii{{i}}" name="GuruDelapan2">
+                  </div>
+                  <div class="col-lg-6 mb-3">
+                    <label for="guru1kelasix{{i}}" class="form-label">Guru 1 Kelas IX</label>
+                    <input type="text" class="form-control" id="guru1kelasix{{i}}" name="GuruSembilan1">
+                  </div>
+                  <div class="col-lg-6 mb-3">
+                    <label for="guru2kelasix{{i}}" class="form-label">Guru 2 Kelas IX</label>
+                    <input type="text" class="form-control" id="guru2kelasix{{i}}" name="GuruSembilan2">
+                  </div>
+                </div>
+              {% endfor %}
+              <div class="text-end">
+                <button class="btn btn-dark">Generate</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER SECTION -->
+    <footer class="footer bg-dark text-center text-white p-4">
+      <div class="container">
+        <p class="mb-0">Copyrights © 2022 All Rights Reserved by Kelompok 5 C1 2021</p>
+      </div>
+    </footer>
+
+    <!-- CDN Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- CDN AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- Init AOS -->
+    <script>
+        AOS.init();
+    </script>
+
+</body>
+</html>

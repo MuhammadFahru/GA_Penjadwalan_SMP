@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UTS AI - Genetic Algorithm</title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="https://i.ibb.co/f49tsXT/logo.png" type="image/x-icon">
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+
+    <!-- CDN Fontawesome -->
+    <script src="https://kit.fontawesome.com/97352e191c.js" crossorigin="anonymous"></script>
+
+    <!-- CDN Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
+
+    <!-- CDN AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Styling -->
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .c-pointer {
+            cursor: pointer;
+        }
+
+        .logo-navbar {
+            width: 15%;
+        }
+
+        .logo-footer {
+            width: 50%;
+        }
+
+        .hero {
+            height: 87vh;
+            background-image: url('https://i.ibb.co/c35RDrg/bg.jpg');
+            background-size: cover;
+        }
+
+        .hero-ilus {
+            width: 100%;
+            margin-top: 150px;
+        }
+
+        .hero-desc {
+            margin-top: 130px;
+        }
+
+        .hero-desc-title {
+            font-size: 4rem;
+        }
+
+        .footer-divider {
+            border-bottom: 1px solid white;
+        }
+
+        @media (max-width: 576px) {
+            .logo-navbar {
+                width: 200px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark p-3 sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="https://i.ibb.co/BNbBNGW/logo.png" alt="Logo UPI" class="logo-navbar">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav ms-auto">
+                    <a class="nav-link mx-2 active" href="/">Beranda</a>
+                    <a class="nav-link mx-2" href="/generate">Generate</a>
+                    <a class="nav-link mx-2" href="/team">Team</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section class="hero">
+        <div class="container">
+            <div class="row">
+            <div class="col-lg-6">
+                <div class="hero-desc" data-aos="fade-right">
+                    <h1 class="hero-desc-title mb-5">Genetic Algorithm</h1>
+                    <p class="mb-5">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit accusamus quos quidem in ipsum recusandae perspiciatis ipsa minima blanditiis dolorem id quaerat cumque mollitia odit dolores quibusdam, cum possimus soluta! Fugit accusamus quos quidem in ipsum recusandae perspiciatis ipsa minima blanditiis dolorem id quaerat</p>
+                    <a href="" class="btn btn-outline-dark">Pelajari Selengkapnya <i class="fas fa-long-arrow-alt-down ms-2"></i></a>
+                </div>
+            </div>
+            <div class="col-lg-1"></div>
+            <div class="col-lg-5">
+                <img src="https://i.ibb.co/bbJvdXM/ilus.png" alt="Ilustrasi" class="hero-ilus" data-aos="fade-left">
+            </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER SECTION -->
+    <footer class="footer bg-dark text-center text-white p-4">
+        <div class="container">
+            <p class="mb-0">Copyrights © 2022 All Rights Reserved by Kelompok 5 C1 2021</p>
+        </div>
+    </footer>
+
+    <!-- CDN Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- CDN AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- Init AOS -->
+    <script>
+        AOS.init();
+    </script>
+
+</body>
+</html>
