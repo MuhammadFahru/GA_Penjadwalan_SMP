@@ -62,6 +62,23 @@
             font-size: 4rem;
         }
 
+        .desc {
+            padding-top: 100px;
+            padding-bottom: 100px;
+            background-image: url('https://i.ibb.co/c35RDrg/bg.jpg');
+            background-size: cover;
+        }
+
+        .hr-divider {
+            width: 200px;
+            border-bottom: 3px solid black;
+            margin-bottom: 50px;
+        }
+
+        .text-justify {
+            text-align: justify !important;
+        }
+
         .footer-divider {
             border-bottom: 1px solid white;
         }
@@ -85,7 +102,7 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav ms-auto">
-                    <a class="nav-link mx-2 active" href="/">Beranda</a>
+                    <a class="nav-link mx-2 active" href="/">Home</a>
                     <a class="nav-link mx-2" href="/generate">Generate</a>
                     <a class="nav-link mx-2" href="/team">Team</a>
                 </div>
@@ -100,8 +117,8 @@
             <div class="col-lg-6">
                 <div class="hero-desc" data-aos="fade-right">
                     <h1 class="hero-desc-title mb-5">Genetic Algorithm</h1>
-                    <p class="mb-5">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit accusamus quos quidem in ipsum recusandae perspiciatis ipsa minima blanditiis dolorem id quaerat cumque mollitia odit dolores quibusdam, cum possimus soluta! Fugit accusamus quos quidem in ipsum recusandae perspiciatis ipsa minima blanditiis dolorem id quaerat</p>
-                    <a href="" class="btn btn-outline-dark">Pelajari Selengkapnya <i class="fas fa-long-arrow-alt-down ms-2"></i></a>
+                    <p class="mb-5">Algoritma genetika adalah kelas khusus dari algoritma evolusioner dengan menggunakan teknik yang terinspirasi oleh biologi evolusioner seperti warisan, mutasi, seleksi alam dan rekombinasi (atau crossover). Dalam algoritma ini ada dua hal yang perlu untuk direpresentasikan, yaitu representasi genetik dari solusi dan fungsi untuk mengevaluasi solusi tersebut.</p>
+                    <a href="/#desc" class="btn btn-outline-dark">Pelajari Selengkapnya <i class="fas fa-long-arrow-alt-down ms-2"></i></a>
                 </div>
             </div>
             <div class="col-lg-1"></div>
@@ -109,6 +126,50 @@
                 <img src="https://i.ibb.co/bbJvdXM/ilus.png" alt="Ilustrasi" class="hero-ilus" data-aos="fade-left">
             </div>
             </div>
+        </div>
+    </section>
+
+    <!-- DESC SECTION -->
+    <section class="desc" id="desc">
+        <div class="container">
+            <center data-aos="fade-up">
+                <h3>PENJELASAN</h3>
+                <div class="hr-divider"></div>
+                <p class="w-75 text-justify">Algoritma genetika adalah kelas khusus dari algoritma evolusioner dengan menggunakan teknik yang terinspirasi oleh biologi evolusioner seperti warisan, mutasi, seleksi alam dan rekombinasi (atau crossover). Dalam algoritma ini ada dua hal yang perlu untuk direpresentasikan, yaitu representasi genetik dari solusi dan fungsi untuk mengevaluasi solusi tersebut. Secara umum, langkah-langkah dalam algoritma ini dimulai dengan menyimpan beberapa calon solusi (population). Masing-masing individu dalam populasi tadi akan dievaluasi dan diambil individu-individu terbaik. Kemudian reproduksi dan evolusi dilakukan secara bertahap dengan menerapkan proses crossover (persilangan) dan mutation (mutasi). Hal ini akan dilakukan terus menerus sampai ditemukan solusi yang nilai evaluasinya memenuhi keinginan, atau sampai jumlah iterasi maksimal terpenuhi.</p>
+            </center>
+            <br>
+            <center class="mt-5">
+                <h3 data-aos="fade-up">ALUR PROSES</h3>
+                <div class="hr-divider" data-aos="fade-up"></div>
+                <h5 data-aos="fade-up">Buat Individu Random</h5>
+                <p class="mb-0 w-50" data-aos="fade-up">Membuat satu individu dengan gen secara random</p>
+                <h1 class="mt-4 mb-4" data-aos="fade-up"><i class="fas fa-long-arrow-alt-down"></i></h1>
+                <h5 data-aos="fade-up">Fitness/Cost Function</h5>
+                <p class="mb-0 w-50" data-aos="fade-up">Menentukan nilai dari individu (timetable) yang sudah dibuat berdasarkan constraint yang telah ditentukan, semakin kecil nilai cost pada tabel maka tabel semakin baik</p>
+                <h1 class="mt-4 mb-4" data-aos="fade-up"><i class="fas fa-long-arrow-alt-down"></i></h1>
+                <h5 data-aos="fade-up">Generate Population</h5>
+                <p class="mb-0 w-50" data-aos="fade-up">Membuat populasi berisi n individu</p>
+                <h1 class="mt-4 mb-4" data-aos="fade-up"><i class="fas fa-long-arrow-alt-down"></i></h1>
+                <h5 data-aos="fade-up">Selection</h5>
+                <p class="mb-0 w-50" data-aos="fade-up">Memilih dua individu yang terbaik (memiliki nilai cost terkecil) di antara populasi yang telah dihasilkan pada proses generate population</p>
+                <h1 class="mt-4 mb-4" data-aos="fade-up"><i class="fas fa-long-arrow-alt-down"></i></h1>
+                <h5 data-aos="fade-up">Crossover</h5>
+                <p class="mb-0 w-50" data-aos="fade-up">Menukar beberapa gen dari dua individu yang telah dipilih pada proses selection untuk menghasilkan individu baru. Dalam algoritma ini, yang tukar adalah jadwal kelas VII</p>
+                <h1 class="mt-4 mb-4" data-aos="fade-up"><i class="fas fa-long-arrow-alt-down"></i></h1>
+                <h5 data-aos="fade-up">Mutation</h5>
+                <p class="mb-0 w-50" data-aos="fade-up">Memodifikasi gen dalam individu baru yang telah melalui proses crossover dengan merandom jadwal dalam satu hari. Laju mutasi digunakan untuk menentukan apakah suatu jadwal dalam satu hari di suatu kelas akan di-random atau tidak. Jika angka random lebih kecil atau sama dengan laju mutasi, maka jadwal pada hari dan kelas tersebut akan di-random</p>
+                <h1 class="mt-4 mb-4" data-aos="fade-up"><i class="fas fa-long-arrow-alt-down"></i></h1>
+                <h5 data-aos="fade-up">Reassign Population</h5>
+                <p class="mb-0 w-50" data-aos="fade-up">Mengeliminasi individu yang nilai cost-nya paling tinggi dan memasukkan individu baru hasil crossover dan mutasi ke populasi</p>
+                <h1 class="mt-4 mb-4" data-aos="fade-up"><i class="fas fa-long-arrow-alt-down"></i></h1>
+                <h5 data-aos="fade-up">Main Looping and Termination</h5>
+                <p class="mb-0 w-50" data-aos="fade-up">Program utama mulai dari mengambil data input. Kemudian membuat populasi serta melakukan proses selection, crossover, sampai mutation untuk menghasilkan individu yang terbaik. Perulangan terus terjadi hingga konvergen atau sampai pada maksimal iterasi</p>
+                <h1 class="mt-4 mb-4" data-aos="fade-up"><i class="fas fa-long-arrow-alt-down"></i></h1>
+                <h5 data-aos="fade-up">Logging</h5>
+                <p class="mb-0 w-50" data-aos="fade-up">Membuat dan menampilkan proses yang terjadi selama algoritma dijalankan</p>
+                <h1 class="mt-4 mb-4" data-aos="fade-up"><i class="fas fa-long-arrow-alt-down"></i></h1>
+                <h5 data-aos="fade-up">DONE</h5>
+            </center>
         </div>
     </section>
 
