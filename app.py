@@ -269,7 +269,7 @@ def process():
     gen_num = 4 # Banyaknya individu dalam populasi
     laju_mutasi = 0.04
     population = generate_population.generate_population(gen_num, data)
-    max_generation = 500 # batas maksimal iterasi
+    max_generation = 200 # batas maksimal iterasi
 
     # Main Looping
     i = 0
