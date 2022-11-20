@@ -3,6 +3,7 @@
 ### Kelompok 5 C1 2021
 
 Mata Kuliah : Kecerdasan Buatan
+
 Dosen Pengampu : Yaya Wihardi, S.Kom., M.Kom.
 
 - NIM : 2100137
