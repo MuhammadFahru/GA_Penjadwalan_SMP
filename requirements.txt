@@ -15,7 +15,6 @@ click==8.0.3
 colorama==0.4.5
 contourpy==1.0.5
 cryptography==3.4.8
-cupshelpers==1.0
 cycler==0.11.0
 dbus-python==1.2.18
 decorator==4.4.2
