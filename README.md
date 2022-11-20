@@ -3,19 +3,16 @@
 ### Kelompok 5 C1 2021
 
 Mata Kuliah : Kecerdasan Buatan
-
+Dosen Pengampu : Yaya Wihardi, S.Kom., M.Kom.
 
 - NIM : 2100137
 - Nama : Muhamad Nur Yasin Amadudin
 
-
 - NIM : 2103703
 - Nama : Fauziyyah Zayyan Nur
 
-
 - NIM : 2108927
 - Nama : Muhammad Fahru Rozi
-
 
 - NIM : 2102843
 - Nama : Najma Qalbi Dwiharani
