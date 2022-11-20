@@ -1,10 +1,12 @@
 ## College Assignment Needs
 
-### Kelompok 5 C1 2021
+### Kelompok 5 C1 2021 Universitas Pendidikan Indonesia
 
 Mata Kuliah : Kecerdasan Buatan
 
 Dosen Pengampu : Yaya Wihardi, S.Kom., M.Kom.
+
+Anggota Kelompok :
 
 - NIM : 2100137
 - Nama : Muhamad Nur Yasin Amadudin
