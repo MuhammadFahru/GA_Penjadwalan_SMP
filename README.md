@@ -8,17 +8,13 @@ Dosen Pengampu : Yaya Wihardi, S.Kom., M.Kom.
 
 Anggota Kelompok :
 
-- NIM : 2100137
-- Nama : Muhamad Nur Yasin Amadudin
+- 2100137 | Muhamad Nur Yasin Amadudin
 
-- NIM : 2103703
-- Nama : Fauziyyah Zayyan Nur
+- 2103703 | Fauziyyah Zayyan Nur
 
-- NIM : 2108927
-- Nama : Muhammad Fahru Rozi
+- 2108927 | Muhammad Fahru Rozi
 
-- NIM : 2102843
-- Nama : Najma Qalbi Dwiharani
+- 2102843 | Najma Qalbi Dwiharani
 
 ## Link Production
 
